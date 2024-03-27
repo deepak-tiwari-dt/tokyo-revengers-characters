@@ -1,0 +1,61 @@
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem;
+}
+
+.character,
+.title {
+  color: hsl(360, 70%, 48%);
+  font-weight: 700;
+  text-align: center;
+}
+
+.title {
+  padding: 1rem;
+  font-weight: 600;
+}
+
+.cardContent {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  padding: 3rem;
+  background-color: #fefefe;
+  border-radius: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.characterInfo {
+  line-height: 1.6rem;
+  flex: 7;
+}
+
+.imgWrapper {
+  flex: 3;
+  height: 25rem;
+  border-radius: 0.7rem;
+  background-color: #000;
+  overflow: hidden;
+}
+
+.img {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  background-color: #000;
+}
+
+@media (max-width: 1024px) {
+  .cardContent {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    padding: 1rem;
+  }
+  .imgWrapper {
+    width: 300px;
+  }
+}

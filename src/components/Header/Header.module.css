@@ -1,0 +1,17 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+  background-color: rgba(255, 0, 0, 0.1);
+}
+
+.img {
+  width: 5rem;
+  height: 5rem;
+}
+
+#title {
+  color: hsl(360, 77%, 48%);
+  font-weight: 700;
+}
