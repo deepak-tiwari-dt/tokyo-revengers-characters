@@ -32,6 +32,10 @@
   flex: 7;
 }
 
+.characterInfo:hover {
+  color: hsl(360, 70%, 48%);
+}
+
 .imgWrapper {
   flex: 3;
   height: 25rem;
@@ -46,6 +50,13 @@
   aspect-ratio: 1/1;
   object-fit: cover;
   background-color: #000;
+  transition: width 1s, height 1s;
+}
+
+.img:hover {
+  width: 25rem;
+  height: 30rem;
+  cursor: pointer;
 }
 
 @media (max-width: 1024px) {
@@ -57,5 +68,32 @@
   }
   .imgWrapper {
     width: 300px;
+  }
+}
+
+.character {
+  animation: characterAnimation 3s linear 1s 1 normal forwards;
+}
+
+@keyframes characterAnimation {
+  0% {
+    transform: translate(500px, 0px);
+  }
+
+  50% {
+    transform: translate(-100px, 0px);
+  }
+}
+
+.title {
+  animation: titleAnimation 3s linear 1s 1 normal forwards;
+}
+
+@keyframes titleAnimation {
+  0% {
+    transform: translate(-500px, 0px);
+  }
+  50% {
+    transform: translate(100px, 0px);
   }
 }

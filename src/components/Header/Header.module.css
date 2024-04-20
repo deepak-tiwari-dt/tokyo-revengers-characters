@@ -15,3 +15,29 @@
   color: hsl(360, 77%, 48%);
   font-weight: 700;
 }
+
+.img:hover {
+  animation: rotate 3s linear 1s 2 alternate;
+  cursor: pointer;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  20% {
+    transform: rotate(80deg);
+  }
+  40% {
+    transform: rotate(140deg);
+  }
+  60% {
+    transform: rotate(220deg);
+  }
+  80% {
+    transform: rotate(300deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
